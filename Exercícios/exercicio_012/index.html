@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+    <!-- Adicionando video para teste -->
+    <!-- <video src="midia/meu-video.mp4" width="500" autoplay controls loop></video> -->
+
+    <!-- Adicionando videos de diversos formatos -->
+    <!-- POSTER para adicionar capa no video -->
+    <video width="560" poster="imagens/borboletas.png" autoplay controls loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <source src="midia/Meu-Video.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+    <!-- Sempre tomar cuidado com o tamanho dos videos devido o alto custo para hospedagem -->
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hZSeS9ng7Ew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Video hospedado externamente (Youtube) tem custo baixo para utilização -->
+</body>
+</html>

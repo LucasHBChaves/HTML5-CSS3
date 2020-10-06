@@ -1,0 +1,231 @@
+<!-- Código base que todo arquivo html deve possuir -->
+<!-- TAG é a descrição entre <>. Para abrir uma TAG usamos <> e para fechar </>-->
+<!DOCTYPE html> <!-- Indica que o arquivo será criado em HTML5-->
+<html lang="pt-br"> <!-- LANG é para definir linguagem dos textos, será em português -->
+<head> <!-- Local onde ficam as configurações do site -->
+    <meta charset="UTF-8"> <!-- Padrão de caracteres que aceita acentuação-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Utilização de 100% da tela disponível -->
+    <title>Meu Primeiro Exercício</title> <!-- Título do site, aparece escrito na aba do navegador-->
+</head>
+
+<!-- Local onde fica o conteúdo do site -->
+    <h1>Olá Mundo!</h1> <!-- Cabeçalho, título -->
+    <hr> <!-- Cria uma linha horizontal -->
+    <p>Esse é o meu primeiro documento HTML. Estou muito feliz!</p> <!-- Parágrafo -->
+
+<br> <!-- Quebra de linha -->
+&lt; "texto" &gt; <!-- Sinal de < > -->
+
+<!-- Símbolos especiais: --> 
+    &reg; <!-- Símbolo de marca registrada -->
+    &copy; <!-- Símbolo CopyRight-->
+    &trade; <!-- Símbolo marca registrada -->
+
+<!-- Símbolos de moedas -->
+    &euro;
+    &pound;
+    &yen;
+    &cent;
+
+<!-- EMOJIS --> 
+    &#x1F609; <!-- &#x para aplicação hexadecimal. Necessário tambem para uso de EMOJIS -->
+    &#x1F910;
+
+<!-- Upload de imagens -->
+    <img src="Logo HTML5.png" alt="Logo HTML5"> <!-- SRC local para inserir a imagem e ALT descrição da imagem. Imagem está na mesma pasta -->
+    <img src="imagens/Logo CSS3.png" alt="Logo CSS3"> <!-- Imagem em subpasta -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/726px-Javascript-shield.svg.png" alt="Logo JavaScript"> <!-- Imagem alocada externamente -->
+
+<!-- Adicionando LINK ICON de favorito -->
+    <link rel="shortcut icon" href="HTML5 icon.ico" type="image/x-icon">
+
+<!-- Níveis de Títulos -->
+    <h1></h1> <!-- H1 para título principal -->
+    <h2></h2> <!-- H2 para sub-título -->
+    <h3></h3> <!-- H3 para sub-título dentro de sub-título e assim sucessivamente -->
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+
+<!-- Parâmetros Obsoletos -->
+    <body bgcolor = "blue"> <!-- Tag ou parametro em vermelho, significa que estão obsoletas conforme orgão internacional. HTML não serve mais para partes gráficas e desing do site. -->
+    <center><h1></h1></center>
+    <p><font color = "white"></font></p>
+    </body>
+
+<!-- Formatação Local -->
+    <style>
+        mark {
+            background-color: darkgreen;
+        }
+        h1 {
+            color: rgb(255, 38, 0);
+        }
+        h2 {
+            color: rgb(121, 4, 172);
+        }
+    </style> <!-- Estilo criado dentro do cabeçalho para todos os MARK, H1 e H2 serem modificados ao mesmo tempo -->
+
+    <!-- Negrito / Destaque -->
+        Nesta frase, temos <b>um termo em negrito</b> usando a tag B (não semântica)</p> <!-- Tag B da somente forma, negrito -->
+        <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p> <!-- Tag STRONG da forma e sentido (significado) do porque está em negrito -->
+
+    <!-- Itálico / Ênfase -->
+        <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+        <!-- Tag I da somente forma, itálico -->
+        <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+        <!-- Tag EM da forma e sentido (significado) do porque está em itálico -->
+
+    <!-- Texto Marcado -->
+        <p>Podemos criar também <mark> um texto marcado</mark> usando a tag MARK. <p>
+        <!-- MARK para criar marcação no texto -->
+        <p>E no outro parágrafo temos <mark>outro texto marcado.</mark></p>
+
+    <!-- Texo grande e pequeno -->
+        <p>Estamos criando um texto grande e um <small>texto pequeno</small> neste parágrafo</p>
+        <!-- SMALL para diminuir tamanho do texto -->
+
+    <!-- Texto deletado -->
+        <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+        <!-- DELL para fazer marcação de texto excluído, mas que pode ser lido -->
+
+    <!-- Texto inserido -->
+        <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi inserido depois.</p>
+        <!-- INS (semântica) para marcação de texto inserido -->
+        <p>Existe também os <u>sublinhados</u> com a tag U (não semântica)</p>
+        <!-- Tag U da somente forma, sublinhado -->
+
+    <!-- Texto sobrescrito -->
+        <p>Para inserir coisas do tipo: X<sup>20</sup>+3</p>
+        <!-- SUP para elevar o valor, ficar superior -->
+
+    <!-- Texto subescrito -->
+        <p>Para inserir coisas do tipo: H<sub>2</sub>O</p>
+        <!-- SUB para rebaixar o valor, ficar inferior -->
+
+<!-- Outras Formatações -->
+    <!-- Código Fonte / Pré Formatação -->
+    <p>O comando <code>document.getElementById ("teste")</code> é escrito em linguagem Java Script.</p>
+    <!-- CODE formata o texto para ter a mesma largura para todas as letras, mono espaçado -->
+        <pre>
+            <code>
+        num = int (imput('Digite um número'))
+        if num % 2 == 0
+            print (f'O número {num} é PAR)
+        else:
+            print (f'O número {num} é ÍMPAR)
+        print ('Fim do programa')
+            </code>
+        </pre>
+    <!-- PRE (pré formatação) para incluir espaçamentos, quebra de linhas e tabulações. SHIFT + TAB para tirar tabulações-->
+
+    <!-- Citações simples -->
+        <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido!</q></p>
+        <!-- Q para citação, adiciona aspas. Para indicar quando o texto pertence a outra pessoa, por exemplo -->
+
+    <!-- Citações completas -->
+        <p>Segundo Jeff Noble no seu libro HTML Para Leigos:</p>
+        <blockquote cite = https://www.amazon.com.br/HTML-XHTML-CSS-Para-Leigos-ebook/dp/B07H7QMGWQ/ref=asc_df_B07H7QMGWQ/?tag=googleshopp00-20&linkCode=df0&hvadid=379795277213&hvpos=&hvnetw=g&hvrand=5032924477804364614&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001767&hvtargid=pla-812948108070&psc=1>
+            <q>A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</q>
+        </blockquote>
+        <!-- BLOCKQUOTE desloca o texto para a direita em uma citação. CITE faz o link da citação com o endereço URL para buscas na internet-->
+
+    <!-- Abreviações -->
+        <p>Estou estudando <abbr title="HyperText Markup Languagem">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou aodrando!</p>
+        <!-- ABBR TITLE para abreviações e mostra o significado de uma sigla ao passar o mouse em cima -->
+
+    <!-- Texto invertido -->
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+
+<!-- Listas -->
+    <!-- Trabalhando com listas -->
+        <!-- Listas ordenadas -->
+        <ol type="1"> <!-- TYPE para escolher tipo de ordenador da lista. 1 A a I i -->
+            <li>Acordar</li>
+            <li>Ligar para o João assim que acordar</li>
+            <li>Tomar café</li>
+        </ol>
+    <!-- OL para criar uma lista ordenada. LI para adicionar os itens na lista. /LI para fechamento não é obrigatório a partir do HTML5 -->
+
+    <!-- Listas não ordenadas -->
+        <ul type= "square"> <!-- disc / circle / square -->
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+        </ul>
+        <!-- UL para criar uma lista não ordenada. -->
+
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li> <!-- LI item de lista -->
+        <ol type = "a"> <!-- Lista ordenada por letras -->
+            <li>Cliper</li>
+            <li>Visual Basic</li>
+            <li>Fortrun</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type = "a" start = "5"> <!-- Ordenada por letra mas inicia a partir da 5º letra -->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <!-- Lista de definições -->
+        <dl> <!-- DL para adicionar campo para lista de definição -->
+            <dt>HTML</dt> <!-- DT para adicionar o termo que será definido -->
+            <dd>Linguagem de marcação para a criação do conteúdo de um site</dd> <!-- DD para adicionar a descrição do termo -->
+        </dl>
+
+<!-- Trabalhando com Links -->
+    <!-- Usando Links Externos -->
+        <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+        <!-- A para adicionar um link e HREF é a referência desse link. TARGE _BLANK fará com que o site seja aberto em uma nova aba e REL EXTERNAL classifica o link como externo, um novo site que está fora do seu. -->
+
+    <!-- Usando links internos -->
+        <p>Esta é a primeira página do meu site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+        <!-- NEXT para indicar que o link é de uma outra página dentro do mesmo site -->
+
+        <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+        <!-- SELF para abrir o link na mesma janela -->
+
+    <!-- Links para download -->
+        <ul> 
+            <li><a href="livros/A ARTE DA GUERRA.pdf" download="A ARTE DA GUERRA.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+            <li><a href="livros/A ARTE DA GUERRA.rar" download="A ARTE DA GUERRA.rar" type="application/rar">Baixar o livro em RAR</a></li>
+            <!-- DOWNLOAD para fazer download direto com o link e APPLICATION para indicar o tipo de midia -->
+        </ul>
+    <!-- Segunda página do site -->
+        <p>Esta página é um oferecimento da <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow">HostNet</a></p>
+        <!-- NOFOLLOW para que o buscador entenda que o site não é totalmente confiável -->
+        
+        <p><a href="index.html" rel="prev">voltar para a primeira página</a></p>
+        <!-- PREV para indicar que o link é de uma página anterior dentro do mesmo site -->
+
+<!-- Formatação de imagens -->
+    <!-- Imagens Dinâmicas -->
+        <p>Tente abrir este site em vários dispositivos diferentes ou simplesmete aumente e diminua o tamanho do seu navegador.</p>
+        <picture> <!-- PICTURE para adicionar imagens e fazer dinâmica com os tamanhos -->
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem flexível">
+            <!-- SOURCE MEDIA para adicionar imagens e fazer a dinâmica com os tamanhos -->
+        </picture>
+
+    <!-- Reproduzindo aúdios -->
+        <audio src="midia/body_and_attitude.mp3" controls autoplay></audio> -->
+        <!-- AUDIO para adicionar aúdio, CONTROLS para aparecer controle de reprodução, AUTOPLAY para tocar quando abrir o site e LOOP para a música tocar novamente quando acabar  -->
+        <!-- Formatos de audio suportadops: MP3 WAV OGG -->
+        <audio preload="metadata" autoplay controls loop>
+        <!-- AUTO carrega todas as informações do arquivo antes de executa-lo, METADATA carrega parte de algumas informações e NONE não carrega nada e só executa quando o usuário clicar.-->
+            <source src="midia/body_and_attitude.mp3" type="audio/mpeg">
+            <source src="midia/body_and_attitude.ogg" type="audio/ogg">
+            <source src="midia/body_and_attitude.wav" type="audio/wav">
+            <!-- Tentar evitar arquivos WAV porque são muito pesados -->
+            <!-- O navegador sempre vai tentar carregar os arquivos na ordem que está descrita acima -->
+            <p>Infelizmente o seu navegador não pode reproduzir aúdio.</p>
+            <a href="midia/body_and_attitude.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </audio>
+

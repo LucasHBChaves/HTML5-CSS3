@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmete aumente e diminua o tamanho do seu navegador.</p>
+    <picture> <!-- PICTURE para adicionar imagens e fazer dinâmica com os tamanhos -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!-- SOURCE MEDIA para adicionar imagens e fazer a dinâmica com os tamanhos -->
+    </picture>
+    <h1>Reproduzindo aúdios</h1>
+    <p>Vamos aprender a reproduzir aúdio em HTML5.</p>
+    <!-- <audio src="midia/body_and_attitude.mp3" controls autoplay></audio> -->
+    <!-- AUDIO para adicionar aúdio, CONTROLS para aparecer controle de reprodução, AUTOPLAY para tocar quando abrir o site e LOOP para a música tocar novamente quando acabar  -->
+    <!-- Formatos de audio suportadops: MP3 WAV OGG -->
+    <audio preload="metadata" autoplay controls loop>
+    <!-- AUTO carrega todas as informações do arquivo antes de executa-lo, METADATA carrega parte de algumas informações e NONE não carrega nada e só executa quando o usuário clicar.-->
+        <source src="midia/body_and_attitude.mp3" type="audio/mpeg">
+        <source src="midia/body_and_attitude.ogg" type="audio/ogg">
+        <source src="midia/body_and_attitude.wav" type="audio/wav">
+            <!-- Tentar evitar arquivos WAV porque são muito pesados -->
+        <!-- O navegador sempre vai tentar carregar os arquivos na ordem que está descrita acima -->
+        <p>Infelizmente o seu navegador não pode reproduzir aúdio.</p>
+        <a href="midia/body_and_attitude.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+</body>
+</html>

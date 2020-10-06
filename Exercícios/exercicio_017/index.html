@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            /* Quando usar FONT FAMILY com descrição dupla (Ex.: Courier New) deve-se colocar entre aspas.
+            Pode-se tambem colocar somente a categoria da fonte e o próprio navegador vai colocar no texto. */
+            font-family:'Work Sans', Arial, Helvetica, sans-serif;
+            
+            /* Medidas Absolutas - Podem alterar a aprensetanção de acordo com o dispositivo
+            cm (centímetros), mm (milímetros), in (polegadas), pt (ponto), pc (paica)
+            
+            Medidas Relativas
+            em, ex, ren, vw, vh, %
+            
+            16px geralmente é igual a 1em
+            Recomendação W3C - Utilizar PX e EM
+            */
+            font-size: 1em;
+            /* Pesos da Fonte 
+            Lighter, normal, bold, bolder
+            Variações numéricas de 100 a 900
+            */
+            font-weight: bold;
+            /* Estilo de fonte */
+            font-style: italic;
+            /* Sublinhado */
+            text-decoration: underline;
+        }
+        h1 {
+            /* font-family:'Work Sans', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /*
+
+            /* Shorthand font
+            font-style --> font-weight --> font-size --> font-family
+            */
+            font: italic 3em italic 'Work Sans', serif;
+        }
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id ex eaque at possimus rem, voluptatibus sint nam quia aliquid illum laudantium et voluptate quidem quis voluptatum error reiciendis! Obcaecati!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro recusandae necessitatibus cum amet sapiente dignissimos, quidem numquam repudiandae blanditiis perferendis nulla eaque ex fugit assumenda aliquam quo veniam harum distinctio.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam at dicta ab odit, iure dolore itaque reiciendis quo culpa odio explicabo ipsam quaerat sapiente minima quisquam fuga quia ullam.</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae labore, adipisci architecto at aliquam, earum, delectus eveniet quidem perspiciatis voluptatibus a id accusantium minima optio animi. Maiores dolorem sit nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vitae corrupti dolorem, architecto at placeat quo vel, itaque perferendis voluptatibus ipsum odit? Tempora atque dolores nulla porro voluptate tempore molestiae.</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@charset "UTF-8"; /* Regra criada para padrão Português - Brasil */
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; /* Tipo de fonte dos textos */
+}
+body {
+    background-image: linear-gradient(to right, #EBF2F2, #C2F2F2); /* Gradiente linear da esquerda para a direita com duas cores */
+}
+main {
+    border-radius: 15px; /* Arredondadmento de borda na parte dos textos */
+    background-color: white; /* Colocar fundo branco onde estão os textos */
+    box-shadow: 5px 5px 15px #7a9999af; /* Sombreamento das bordas */ 
+    width: 650px; /* Largura do espaço onde estão os textos*/
+    padding: 10px; /* Espaço nas laterais dos textos na parte branca */
+    margin: auto; /* Texto fica centralizado independente do tamanho da janela*/
+}
+h1 {
+    color: #2E3740; /* Cor de títulos H1*/
+    text-align: center; /* Alinhamento para o centro dos títulos H1 */
+    text-shadow: 1px 1px 2px #2E3740; /* Sombreamento dos títulos H1 */
+}
+h2 {
+    color: #F28157;
+}
+p {
+    text-align: justify;
+}
