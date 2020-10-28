@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de Fundo</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 97vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url("Imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* Preenchimento de imagem de fundo
+            background-size: cover; */
+            
+            /* Preenchimento de imagem de fundo
             - CONTAIN exibe 100% da imagem 
             - COVER cobre a tela inteira mas não mostra a imagem completa */
+            background-attachment: fixed; /* Agrupamento do fundo com o conteúdo do site */
+
+            /* Shorthand - Background 
+                color > image > position > repeat > [size] > attachment
+            */
+            background: black url("Imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover; /* COVER ainda não funciona na aplicação Shorthand */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -30,6 +39,7 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae dolor perspiciatis facere cum? Repellat atque error neque esse perspiciatis laboriosam inventore ex reprehenderit quos a! Consequuntur voluptates quidem voluptatum id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo possimus quia porro quas optio, saepe voluptatum, aperiam eligendi hic accusamus placeat corporis perspiciatis deleniti sint minima nisi reprehenderit sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, inventore unde illum amet nobis velit rem. Dolores sed, doloremque beatae laborum optio necessitatibus! Tempora cumque possimus fuga dignissimos? Maxime, repellat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint non sapiente nemo, rem vero est incidunt fugiat quibusdam hic, perferendis, ipsa quod maiores vel. Vel provident modi necessitatibus nesciunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nemo veniam dignissimos pariatur qui accusamus, dolor suscipit quas perferendis nostrum quo, fuga officia? Excepturi possimus hic placeat nulla, voluptatum aut? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis similique saepe odit? Praesentium, distinctio. Doloremque eum asperiores id ea accusamus ad aliquam cupiditate quaerat accusantium minus necessitatibus, voluptatem excepturi cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, deleniti! Praesentium omnis tempore nam placeat. Molestias officiis perspiciatis tenetur amet reprehenderit! Officiis fugiat fugit quis officia temporibus reprehenderit ipsum unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt a repellendus, vitae expedita placeat iure, repellat obcaecati neque quae voluptatum tempore natus ipsa minus similique, voluptates veritatis alias quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, alias itaque. Commodi, quos optio! Ipsa, quod repudiandae molestias quidem minus accusantium tenetur libero corrupti excepturi doloribus dicta minima, animi odio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, asperiores! Explicabo architecto deleniti illo et, aperiam voluptates, perferendis dolor enim voluptatum unde exercitationem, tempora vitae autem quaerat adipisci quis possimus?</p>
     </main>
 </body>
 </html>
