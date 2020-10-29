@@ -1,5 +1,70 @@
 @charset "UTF-8";
 
-body {
-    
+
+* { /* Configurações gerais */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /* Tamanho minimo do HTML e do BODY será 100% da altura da View Height*/
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px; /* PADDING no topo do H1 do cabeçalho */
+    font-variant: small-caps;
+    /*
+    - FONT-VARIANT variação das letras
+    - TEXT-TRANSFORM: uppercase; Transforma todas as letras em maíusculas
+    */
+}
+
+header > p {
+    padding-bottom: 50px; /* PADDING no topo do P do cabeçalho */
+}
+
+header a, footer a { /* Link dentro do cabeçalho e do rodapé */
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover { /* Link dentro do cabeçalho e do rodapé */
+    text-decoration: underline;
+}
+
+section { /* Estilos aplicados em todas as SECTIONS */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
